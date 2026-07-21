@@ -1,10 +1,18 @@
 # Overview on CS Common Topics/Must Know Concepts
 ### Tier standard:
 - Tier 1: Almost Every CS Graduate Should Review.
+
 - Tier 2: Frequently Asked Depending on Position.
+
+
 - Tier 3: Depends on Specialty.
+
+
   _**(Advanced)**_
+
 - Tier 4: Project Evaluation.
+
+
 - Tier 5: Engineering Thinking.
 
 ***
