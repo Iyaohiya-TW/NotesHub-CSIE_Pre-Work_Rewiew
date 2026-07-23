@@ -6,9 +6,9 @@
 1. [Variables](#variables)
 
 [Data Types](#data-types)
-1.   [Primitive Data Types](#primitive-basic-data-types)
-2.   [Non-Primitive Data Types]()
-3.   [Numeric Types]()
+1.   [Primitive Data Types](#1-primitive-basic-data-types)
+2.   [Non-Primitive Data Types](#2-non-primitive-data-types)
+3.   [Numeric Types](#3-numeric-types)
 4.   [Boolean Type]()
 5.   [Character & String]()
 6.   [Static vs Dynamic Typing]()
@@ -48,7 +48,7 @@
 [Resource Lifetime]()
 
 
-[To bottom](#bottom-link-anchor)
+⏬ [To bottom](#bottom-link-anchor)
 ***
 
 # Variables
@@ -225,7 +225,7 @@ Primitive data types are the simplest built-in types provided by a programming l
 
 ***
 
-## 2.  Non-Primitive Data Types
+## 2. Non-Primitive Data Types
 
 ### One Sentence Definition
 
@@ -307,12 +307,52 @@ A data structure focuses on **how data is organized**, while a non-primitive typ
 
 Non-primitive data types are higher-level types used to represent complex data that cannot be expressed by a single primitive value. Examples include strings, arrays, objects, lists, maps, and sets. They often combine multiple primitive values into meaningful structures and may also include behavior through methods. While they require more memory and are generally more complex than primitive types, they make it possible to model real-world problems effectively and form the foundation of modern software development.
 
-## 3.   Numeric Types
+## 3. Numeric Types
 
+### One Sentence Definition
 
+**Numeric types** are data types used to represent numerical values for arithmetic operations, calculations, and measurements.
+
+### Why Do We Need It?
+
+Not all numbers are the same. Some numbers represent whole quantities (e.g., the number of users), while others represent values with fractional parts (e.g., temperature or distance). Different numeric types allow programs to balance **precision**, **range**, and **memory usage** based on the problem being solved.
+
+### Core Idea
+
+Numeric types can be broadly divided into two categories:
+
+-   **Integer Types (int)** – Represent whole numbers without a fractional part.
+-   **Floating-Point Types (float)** – Represent numbers with decimal or fractional values.
+
+Different numeric types have different characteristics, including:
+
+-   **Range** – The minimum and maximum values they can store.
+-   **Precision** – How accurately they can represent values.
+-   **Memory Size** – The amount of memory required to store the value.
+
+Choosing the appropriate numeric type helps prevent errors such as overflow, underflow, or precision loss.
+
+### Key Characteristics
+
+-   Represent numerical values.
+-   Support arithmetic operations such as addition, subtraction, multiplication, and division.
+-   Have a limited range of representable values.
+-   May trade precision for a larger range or better performance.
+
+### Advantages
+
+-   Efficient storage and computation for numerical data.
+-   Provide specialized types for different mathematical needs.
+-   Directly supported by computer hardware and programming languages.
+
+### Disadvantages
+
+-   Floating-point types may introduce rounding errors.
+-   Choosing the wrong numeric type can lead to incorrect calculations or wasted memory.
+-   Behavior (size and precision) may differ between programming languages and platforms.
 
 ***
 
 > [!INFO]   Editing tool
-> ##### Bottom Link Anchor
-> [To top](#table-of-content)
+  > #####  ⚓Bottom Link Anchor
+> ⏫ [To top](#table-of-content)
