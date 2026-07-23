@@ -117,7 +117,7 @@ N/A
 
 # Data Types
 
-##### What is a Data Type?
+#### What is a Data Type?
 
 The foundation of the chapter.
 
