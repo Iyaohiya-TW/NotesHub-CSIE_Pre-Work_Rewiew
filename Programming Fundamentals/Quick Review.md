@@ -750,9 +750,12 @@ A language can be:
 -   **Static typing** performs type checking **before** program execution.
 -   **Dynamic typing** performs type checking **during** program execution.
 -   Static typing generally catches errors earlier, while dynamic typing offers greater flexibility.
--   **Type inference is not the same as dynamic typing.**
--   **Dynamic typing is not the same as weak typing.**
+-   **Type inference is not the same as static/dynamic typing.**
+-   **Static/dynamic typing is not the same as strong/weak typing.**
 -   Neither approach is universally better—the choice depends on the language's goals and the application's requirements.
+
+>[!tip] Extended discussion
+>Static typing and dynamic typing are not simply choices based on project size. They represent different philosophies of software development. [Dynamic & Staic typing & MORE](/Programing_Fundamentals/Dynamic_&_Staic_typing_&_MORE.md)
 
 ***
 
