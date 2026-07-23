@@ -12,7 +12,7 @@
 4.   [Boolean Type](#4-boolean-type)
 5.   [Character & String](#5-character--string)
 6.   [Static vs Dynamic Typing](#6-static-vs-dynamic-typing)
-7.   [Strong vs Weak Typing]()
+7.   [Strong vs Weak Typing](#7-strong-vs-weak-typing)
 8.   [Type Inference]()
 9.   [Type Conversion]()
 10.   [Null / None / Nil]()
@@ -754,8 +754,23 @@ A language can be:
 -   **Static/dynamic typing is not the same as strong/weak typing.**
 -   Neither approach is universally better—the choice depends on the language's goals and the application's requirements.
 
->[!tip] Extended discussion
->Static typing and dynamic typing are not simply choices based on project size. They represent different philosophies of software development. [Dynamic & Staic typing & MORE](/Programming%20Fundamentals/Dynamic%20%26%20Staic%20typing%20%26%20MORE.md)
+>[!tip] Extend discussion
+>Static typing and dynamic typing are not simply choices based on project size. They represent different philosophies of software development. [Read Dynamic & Staic typing & MORE](/Programming%20Fundamentals/Dynamic%20%26%20Staic%20typing%20%26%20MORE.md)
+
+## 7. Strong vs Weak Typing
+
+### One Sentence Definition
+
+**Strong typing** strictly enforces type rules and prevents implicit operations between incompatible types, while **weak typing** allows more automatic type conversions, even when they may produce unexpected results.
+
+### Why Do We Need It?
+
+Programs frequently work with values of different types, such as numbers, strings, and Booleans. A language must decide **how strictly** it should enforce type compatibility when these values interact.
+
+Strong and weak typing represent two different philosophies:
+
+-   Should the language **protect the programmer** from invalid operations?
+-   Or should it **be flexible** and automatically convert values whenever possible?
 
 ***
 
