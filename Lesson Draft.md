@@ -22,8 +22,6 @@
 ### Things People Often Confuse
 
 ### Things You MUST Remember
-
-### One-Minute Summary
 ```
 
 #### Topic Name
@@ -39,7 +37,7 @@ Context/Motivations.
 Mechanism.
 
 #### Key Characteristics
-Help indentify when it's included.
+Help indentify the concept/tech. Clues for when to use it.
 
 #### Advantages
 Advantages.
@@ -54,10 +52,7 @@ Use cases.
 Comparison.
 
 #### Things People Often Confuse
-Clear understanding.
+Run through common blindspot.
 
 #### Things You MUST Remember
-Common blindspot.
-
-#### One-Minute Summary
 AT LEAST run through this id you don't have time.
