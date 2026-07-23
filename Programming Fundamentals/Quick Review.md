@@ -774,6 +774,6 @@ Strong and weak typing represent two different philosophies:
 
 ***
 
-> [!INFO]   Editing tool
+> [!INFO]   Navigation tool
 > #####  ⚓ Bottom Link Anchor
 > ⏫ [To top](#table-of-content)
