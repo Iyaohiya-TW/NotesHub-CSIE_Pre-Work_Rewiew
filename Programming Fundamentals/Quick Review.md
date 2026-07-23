@@ -755,7 +755,7 @@ A language can be:
 -   Neither approach is universally better—the choice depends on the language's goals and the application's requirements.
 
 >[!tip] Extended discussion
->Static typing and dynamic typing are not simply choices based on project size. They represent different philosophies of software development. [Dynamic & Staic typing & MORE](/Programing_Fundamentals/Dynamic_&_Staic_typing_&_MORE.md)
+>Static typing and dynamic typing are not simply choices based on project size. They represent different philosophies of software development. [Dynamic & Staic typing & MORE](/Programming%20Fundamentals/Dynamic%20%26%20Staic%20typing%20%26%20MORE.md)
 
 ***
 
