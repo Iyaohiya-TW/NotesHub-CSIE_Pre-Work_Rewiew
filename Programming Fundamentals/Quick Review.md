@@ -11,7 +11,7 @@
 3.   [Numeric Types](#3-numeric-types)
 4.   [Boolean Type](#4-boolean-type)
 5.   [Character & String](#5-character--string)
-6.   [Static vs Dynamic Typing]()
+6.   [Static vs Dynamic Typing](#6-static-vs-dynamic-typing)
 7.   [Strong vs Weak Typing]()
 8.   [Type Inference]()
 9.   [Type Conversion]()
@@ -113,10 +113,6 @@ N/A
 -   Every variable has a scope and lifetime, even if you don't explicitly see them.
 -   A variable's value may change, but its identity (its name) remains the same.
 
-### One-Minute Summary
-
-N/A
-
 ***
 
 # Data Types
@@ -195,7 +191,7 @@ Common primitive data types include:
 
 ### Things People Often Confuse
 
-#### Character vs String
+##### *Character vs String*
 
 A **character** represents a single symbol.
 
@@ -218,12 +214,6 @@ Not every language considers `String` a primitive type.
 -   The exact primitive types depend on the programming language.
 -   Primitive types are designed for **speed, simplicity, and efficiency**.
 -   Complex data structures are generally built upon primitive data types.
-
-### One-Minute Summary
-
-Primitive data types are the simplest built-in types provided by a programming language. They store a single value, such as an integer, decimal number, Boolean value, or character. Because they are directly supported by the language and hardware, they are fast, memory-efficient, and form the foundation for all more complex data types. Although different programming languages define primitive types differently, the underlying concept remains the same: they are the basic units used to represent data in a program.
-
-***
 
 ## 2. Non-Primitive Data Types
 
@@ -286,7 +276,7 @@ Some common examples include:
 
 ### Things People Often Confuse
 
-##### Non-Primitive vs Data Structure
+##### *Non-Primitive vs Data Structure*
 
 Not every non-primitive type is a **data structure**.
 
@@ -302,10 +292,6 @@ A data structure focuses on **how data is organized**, while a non-primitive typ
 -   Non-primitive data types exist to represent **more complex information** than primitive types can.
 -   They often contain **multiple values**, **relationships**, or **behavior**.
 -   The exact set of non-primitive types differs between programming languages.
-
-### One-Minute Summary
-
-Non-primitive data types are higher-level types used to represent complex data that cannot be expressed by a single primitive value. Examples include strings, arrays, objects, lists, maps, and sets. They often combine multiple primitive values into meaningful structures and may also include behavior through methods. While they require more memory and are generally more complex than primitive types, they make it possible to model real-world problems effectively and form the foundation of modern software development.
 
 ## 3. Numeric Types
 
@@ -368,7 +354,7 @@ Choosing the appropriate numeric type helps prevent errors such as overflow, und
 | No decimal point | Supports decimal values |
 
 ### Things People Often Confuse
-##### Precision vs Accuracy
+##### *Precision vs Accuracy*
 
 These terms are related but not identical.
 
@@ -377,7 +363,7 @@ These terms are related but not identical.
 
 A floating-point number can have high precision yet still be slightly inaccurate due to how it is stored internally.
 
-##### Range vs Precision
+##### *Range vs Precision*
 
 A larger **range** means the type can represent much larger (or smaller) numbers.
 
@@ -444,7 +430,7 @@ N/A
 
 ### Things People Often Confuse
 
-##### Boolean vs Bit
+##### *Boolean vs Bit*
 
 A **Boolean** is a programming language concept representing a logical value.
 
@@ -452,7 +438,7 @@ A **bit** is the smallest unit of data in computer hardware.
 
 Although a Boolean may be stored using one bit (or more, depending on the language and hardware), the two concepts are not the same.
 
-##### Boolean vs Truthy/Falsy Values
+##### *Boolean vs Truthy/Falsy Values*
 
 Many languages (such as Python and JavaScript) allow non-Boolean values to be treated as `true` or `false`.
 
@@ -477,16 +463,296 @@ Languages like Java and C# generally require an actual Boolean value in conditio
 -   Logical operators work on Boolean values.
 -   Be aware that some languages support **truthy/falsy** conversions while others require explicit Boolean values.
 
-### One-Minute Summary
-
-The Boolean type represents one of two logical values: `true` or `false`. It is the foundation of decision-making in programming and is used extensively in conditional statements, loops, and logical expressions. Boolean values are typically produced by comparison operations and manipulated using logical operators such as AND, OR, and NOT. While some programming languages automatically treat certain values as truthy or falsy, the Boolean type itself always represents a clear logical state, making programs easier to read, understand, and control.
-
 ## 5. Character & String
 
 ### One Sentence Definition
 
 A **character** represents a single text symbol, while a **string** represents an ordered sequence of one or more characters used to store and manipulate text.
 
+### Why Do We Need It?
+
+ Character and string types provide a standardized way to represent and manipulate textual information.
+
+Without them, handling human-readable data would be extremely difficult.
+
+### Core Idea
+
+Although both deal with text, **characters** and **strings** serve different purposes.
+
+-   A **character** stores **one** text symbol.
+-   A **string** stores **multiple** characters in sequence.
+
+A string can be thought of as a collection of characters arranged in a specific order.
+
+Most programming languages provide many built-in operations for strings, such as searching, concatenation, comparison, and extracting substrings.
+
+> **Note:** While a string is conceptually a sequence of characters, how it is implemented varies by language. Some languages treat strings as arrays of characters, while others implement them as specialized objects.
+
+### Key Characteristics
+
+#### Character
+
+-   Represents a single symbol.
+-   Typically enclosed in **single quotes** (`'A'`) in many languages.
+-   Can represent letters, digits, punctuation, or special symbols.
+-   Often has a fixed size.
+
+#### String
+
+-   Represents a sequence of characters.
+-   Typically enclosed in **double quotes** (`"Hello"`).
+-   Can be empty (`""`).
+
+### Advantages
+
+#### Character
+
+-   Efficient for storing individual symbols.
+-   Useful when processing text one character at a time.
+
+#### String
+
+-   Easy to store and manipulate text.
+-   Rich set of built-in operations.
+-   Essential for user interaction and file processing.
+
+### Disadvantages
+
+#### String
+
+-   String operations can become expensive for very large texts.
+-   Some languages use immutable strings, meaning modifications create new string objects.
+
+### Common Use Cases
+
+#### Character
+
+-   Reading keyboard input one key at a time.
+-   Processing individual letters.
+-   Checking whether a character is a digit, letter, or punctuation.
+
+#### String
+
+There's way to many use case for string, just name a few.
+
+-   Usernames and passwords.
+-   Messages and documents.
+-   File paths and URLs.
+-   JSON, XML, and source code.
+-   Displaying information to users.
+
+### Comparison
+
+[Check Key Characteristics](#key-characteristics-5)
+
+### Things People Often Confuse
+
+##### *Character vs String*
+
+These are **not interchangeable** most of the time.
+
+##### *String vs Character Array*
+
+Implementation differs by language:
+
+-   In **C**, a string is an array of characters ending with a null terminator (`'\0'`).
+-   In **Java**, **C#**, and **Python**, a string is a dedicated type with built-in methods.
+
+As a programmer, it's more important to understand that a string **behaves like text**, regardless of its internal implementation.
+
+##### *String Length vs Memory Size*
+
+A string's **length** is the number of characters it contains.
+
+Its **memory usage** depends on:
+
+-   Character encoding (ASCII, UTF-8, UTF-16, etc.)
+-   Language implementation
+-   Internal metadata
+
+A string with five characters does **not** necessarily occupy five bytes.
+
+##### *String Is (Usually) Not a Primitive Type*
+In real world example:
+
+-   Java → Object
+-   C# → Reference type (`System.String`)
+-   Python → Object
+-   JavaScript → Primitive value (with object-like behavior)
+-   C → Character array
+
+### Things You MUST Remember
+
+-   A **character** represents **one** symbol.
+-   A **string** represents a **sequence of characters**.
+-   `"A"` and `'A'` are often different data types.
+-   Strings provide many built-in operations for processing text.
+-   The implementation of strings differs between programming languages, but the concept remains the same.
+
+## 6. Static vs Dynamic Typing
+
+### One Sentence Definition
+
+**Static typing** checks a variable's type before the program runs, while **dynamic typing** determines a variable's type during program execution.
+
+### Why Do We Need It?
+
+Programming languages need a way to determine what kind of data a variable holds and whether operations on that data are valid. Static and dynamic typing are two different approaches to enforcing type rules, each balancing **safety**, **flexibility**, and **development speed**.
+
+### Core Idea
+
+The key difference is **when type checking occurs**.
+
+#### Static Typing
+
+The compiler verifies that variables are used with the correct data types **before** the program executes.
+
+```
+Compilation → Type Checking → Program Runs
+```
+
+Errors such as assigning a string to an integer variable are usually caught during compilation.
+
+Examples:
+
+-   C
+-   C++
+-   C#
+-   Java
+-   Go
+-   Rust
+
+#### Dynamic Typing
+
+The type of a variable is determined and checked **while the program is running**.
+
+```
+Program Runs → Type Checking Happens During Execution
+```
+
+Variables can often hold different types of values throughout their lifetime.
+
+Examples:
+
+-   Python
+-   JavaScript
+-   Ruby
+-   PHP
+
+### Key Characteristics
+
+#### Static Typing
+
+-   Type checking occurs before execution.
+-   Variables usually have a fixed type.
+-   Many type-related errors are detected early.
+-   Often provides better IDE support and compile-time optimization.
+
+#### Dynamic Typing
+
+-   Type checking occurs during execution.
+-   Variables can often reference different data types over time.
+-   More flexible for rapid development.
+-   Type-related errors may only appear when the affected code is executed.
+
+### Advantages
+
+#### Static Typing
+
+-   Detects many bugs before runtime.
+-   Better autocomplete and refactoring support.
+-   Easier to maintain large codebases.
+-   Can improve runtime performance through compiler optimizations.
+
+#### Dynamic Typing
+
+-   Less code to write.
+-   Faster prototyping.
+-   Convenient for scripting and automation.
+
+### Disadvantages
+
+#### Static Typing
+
+-   More verbose in some languages.
+-   Requires defining or inferring types before use.
+
+#### Dynamic Typing
+
+-   More runtime type errors.
+-   Harder to catch bugs before deployment.
+-   Can become difficult to maintain in very large projects.
+-   IDEs may have less information for static analysis.
+
+### Common Use Cases
+
+#### Static Typing
+
+-   Enterprise software
+-   Large-scale systems
+-   Financial systems
+-   Operating systems
+-   Performance-critical applications
+
+#### Dynamic Typing
+
+-   Scripts and automation
+-   Web development
+-   Rapid prototyping
+-   Small to medium-sized applications
+-   Data analysis (e.g., Python)
+
+### Comparison
+
+| Static Typing | Dynamic Typing |
+| --- | --- |
+| Type checked before execution | Type checked during execution |
+| Errors found earlier | Errors may appear at runtime |
+| Usually fixed variable types | Variables can often change types |
+| Better compiler optimization | Greater flexibility |
+| Preferred for large projects | Preferred for rapid development |
+
+### Things People Often Confuse
+
+##### _Static Typing vs Type Inference_
+
+These are **different concepts**.
+
+Static typing describes **when** types are checked.
+
+Type inference describes **whether the programmer must explicitly write the type**.
+
+For example:
+
+```
+var age = 20;
+```
+
+Although the type isn't written, `age` is still inferred as an `int` and remains **statically typed**.
+
+Many people mistakenly think `var` automatically means dynamic typing.
+
+##### _Dynamic Typing vs Weak Typing_
+
+These terms are unrelated.
+
+-   **Dynamic typing** answers **when** type checking happens.
+-   **Weak typing** describes **how strictly** the language enforces type rules.
+
+A language can be:
+
+-   Statically typed and strongly typed (e.g., C#, Java)
+-   Dynamically typed and strongly typed (e.g., Python)
+-   Dynamically typed and weakly typed (e.g., JavaScript)
+
+### Things You MUST Remember
+
+-   **Static typing** performs type checking **before** program execution.
+-   **Dynamic typing** performs type checking **during** program execution.
+-   Static typing generally catches errors earlier, while dynamic typing offers greater flexibility.
+-   **Type inference is not the same as dynamic typing.**
+-   **Dynamic typing is not the same as weak typing.**
+-   Neither approach is universally better—the choice depends on the language's goals and the application's requirements.
 
 ***
 
