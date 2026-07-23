@@ -58,4 +58,4 @@ Clear understanding.
 Common blindspot.
 
 #### One-Minute Summary
-AT LEAST Remember this.
+AT LEAST run through this id you don't have time.
