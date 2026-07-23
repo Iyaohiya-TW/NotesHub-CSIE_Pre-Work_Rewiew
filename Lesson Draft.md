@@ -37,7 +37,7 @@ Context/Motivations.
 Mechanism.
 
 #### Key Characteristics
-Clue to bring up this Tech.
+Help indentify when it's included.
 
 #### Advantages
 Advantages.
