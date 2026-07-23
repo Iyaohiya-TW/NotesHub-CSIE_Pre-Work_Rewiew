@@ -351,8 +351,51 @@ Choosing the appropriate numeric type helps prevent errors such as overflow, und
 -   Choosing the wrong numeric type can lead to incorrect calculations or wasted memory.
 -   Behavior (size and precision) may differ between programming languages and platforms.
 
+### Common Use Cases
+
+| Numeric Type | Common Uses |
+| --- | --- |
+| Integer | Counting, indexing, IDs, loop counters |
+| Floating-point | Measurements, physics simulations, financial approximations*, graphics calculations |
+
+> **Note:** Financial applications often avoid floating-point numbers because small rounding errors can accumulate. Many systems use fixed-point or decimal types instead.
+
+### Comparison
+
+| Integer | Floating-Point |
+| --- | --- |
+| Exact representation | Approximate representation |
+| No decimal point | Supports decimal values |
+
+### Things People Often Confuse
+##### Precision vs Accuracy
+
+These terms are related but not identical.
+
+-   **Precision** refers to how many digits a type can reliably represent.
+-   **Accuracy** refers to how close a value is to the true or expected value.
+
+A floating-point number can have high precision yet still be slightly inaccurate due to how it is stored internally.
+
+##### Range vs Precision
+
+A larger **range** means the type can represent much larger (or smaller) numbers.
+
+Higher **precision** means the type can represent values with greater exactness.
+
+Increasing one often requires sacrificing the other or using more memory.
+
+### Things You MUST Remember
+
+-   Numeric types are primarily divided into **integers** and **floating-point numbers**.
+-   Integers are **exact** but cannot represent fractions.
+-   Floating-point numbers can represent fractions but are **approximations**.
+-   Every numeric type has a limited **range** and **precision**.
+-   Choose the numeric type based on the requirements of the problem, not simply because it "works."
+-   Never compare floating-point values for exact equality unless you understand the implications; use a tolerance (epsilon) when appropriate.
+
 ***
 
 > [!INFO]   Editing tool
-  > #####  ⚓Bottom Link Anchor
+> #####  ⚓ Bottom Link Anchor
 > ⏫ [To top](#table-of-content)
